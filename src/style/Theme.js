@@ -1,15 +1,8 @@
-const flexSet = (just = 'center', align = 'center') => {
-  return `display: flex;
+const flexSet = (direction = 'row', just = 'center', align = 'center') =>
+  `display: flex;
+  flex-direction: ${direction};
   justify-content: ${just};
   align-items: ${align};`;
-};
-
-const flexColumnSet = (just = 'center', align = 'center') => {
-  return `display: flex;
-  flex-direction: column;
-  justify-content: ${just};
-  align-items: ${align};`;
-};
 
 const colors = {
   vintageRed: '#ba1628',
@@ -22,19 +15,23 @@ const colors = {
   deepGrey: '#828282',
 };
 
-const font = {
-  fontTitle: "'Alata', sans-serif;",
-  fontContent: "'Noto Sans KR', sans-serif;",
+const fontSize = {
   large: '40px',
   medium: '20px',
   small: '8px',
   tiny: '4px',
 };
+
+const fontWeight = {
+  regular: 400,
+  semiBold: 600,
+  bold: 700,
+};
 const theme = {
   flexSet,
-  flexColumnSet,
   colors,
-  font,
+  fontSize,
+  fontWeight,
 };
 
 export default theme;

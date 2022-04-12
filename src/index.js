@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Router from './Router';
-import GlobalStyle from './style/GlobalStyle'
-import Theme from './style/Theme'
-import { ThemeProvider } from "styled-components";
-
+import GlobalStyle from './style/GlobalStyle';
+import Theme from './style/Theme';
+import { ThemeProvider } from 'styled-components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  	<>
-     <GlobalStyle />
-      <ThemeProvider theme={Theme}>
+  <>
+    <GlobalStyle />
+    <ThemeProvider theme={Theme}>
       <Router />
     </ThemeProvider>
-    </>,);
+  </>
+);

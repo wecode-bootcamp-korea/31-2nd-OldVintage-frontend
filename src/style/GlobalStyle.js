@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import './Theme';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -7,25 +8,40 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     outLine:none;
   }
+
   body{
     background-color: #ffffff;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
   }
-  a {
-    color: inherit;
-    text-decoration: none;
+
+  a, p {
+  font-size: 8px;
+  font-weight: 400;
+  margin: 4px 0;
   }
-  input, button {
-    background-color: transparent;
-    border: none;
-    outline: none;
+
+  h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 0px;
   }
-  h1, h2, h3, h4, h5, h6{
-    font-family:'Maven Pro', sans-serif;
+
+  h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0px;
   }
+
+  h3 {
+  font-size: 8px;
+  font-weight: 600;
+  margin: 8px 0;
+  }
+
   ol, ul, li {
     list-style: none;
   }
+
   img {
     display: block;
     width: 100%;
