@@ -19,13 +19,13 @@ const ProductSortSelector = ({ onSetSortBtnFilter, sortButtonFilter }) => {
           onChange={changeProductSortHandler}
           sx={{ borderRadius: 5 }}
         >
-          <MenuItem value="">
+          <MenuItem value="rating">
             <em>None</em>
           </MenuItem>
-          <MenuItem value="Highest User Rating">Highest User Rating</MenuItem>
-          <MenuItem value="Price:Low to High">Price:Low to High</MenuItem>
-          <MenuItem value="Price:High to Low">Price:High to Low</MenuItem>
-          <MenuItem value="Popular">Popular</MenuItem>
+          <MenuItem value="rating">Highest User Rating</MenuItem>
+          <MenuItem value="low_price">Price:Low to High</MenuItem>
+          <MenuItem value="high_price">Price:High to Low</MenuItem>
+          <MenuItem value="popular">Popular</MenuItem>
         </Select>
       </FormControl>
     </div>

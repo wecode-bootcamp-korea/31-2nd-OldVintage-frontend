@@ -38,7 +38,7 @@ const ProductListRatingFilter = ({ onSetRatingButtonNumb }) => {
                   />
                 }
               />
-              <span>4.0+ Very Rare Stuff</span>
+              <span>4.0+ Rare Stuff</span>
             </div>
             <div>
               <FormControlLabel
@@ -94,7 +94,6 @@ const RatingTitle = styled.span`
   margin: 3vh 0 0 0;
   font-size: 23px;
 `;
-
 const RatingFormControl = styled(FormControl)`
   display: flex;
   flex-direction: column;

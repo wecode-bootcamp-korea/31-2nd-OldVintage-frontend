@@ -61,3 +61,35 @@ export const FILTER_CHECKBOX_CATEGORY = [
   },
   { id: 5, title: 'Food Pairings', filterData: FILTER_FOODPAIRING_INFO },
 ];
+
+export const QUERY_FILTER_CONDITION = {
+  Red: 1,
+  White: 2,
+  Sparkling: 3,
+
+  Hereseibe: 1,
+  Kennolith: 2,
+  Meraufroid: 3,
+  Oaytheldan: 4,
+  Pradwinus: 5,
+  Dongtan: 6,
+
+  France: 1,
+  Chille: 2,
+  Spain: 3,
+  Portugal: 4,
+  Korea: 5,
+
+  Malbec: 1,
+  CabernetSauvignon: 2,
+  Montepulciano: 3,
+  Chardonnay: 4,
+  Geobong: 5,
+  Moscato: 6,
+
+  Pork: 1,
+  Beef: 2,
+  Lamb: 3,
+  Mushroom: 4,
+  Fish: 5,
+};

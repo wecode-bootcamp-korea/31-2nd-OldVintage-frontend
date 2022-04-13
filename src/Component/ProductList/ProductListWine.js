@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductListWineInner from './ProductListWineInner';
-
 import styled from 'styled-components';
+
 const ProductListWine = ({ wineCardData }) => {
   return (
     <WineCardList>
@@ -55,4 +55,8 @@ const WineCard = styled.div`
   border: 1px solid rgb(188, 188, 188, 0.7);
   border-radius: 20px;
   background-color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;

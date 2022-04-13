@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Slider from '@mui/material/Slider';
 
-const PriceSlider = () => {
-  const [sliderNowPrice, setSliderNowPrice] = useState([0, 500000]);
-  const [minPrice, maxPrice] = sliderNowPrice;
-
+const PriceSlider = ({ onFilterPrice, filteredMaxPrice, filteredMinPrice }) => {
   const changePriceHandler = event => {
-    setSliderNowPrice(event.target.value);
+    onFilterPrice(event.target.value);
   };
 
   return (
@@ -17,14 +14,19 @@ const PriceSlider = () => {
         <CurrencyString>KRW</CurrencyString>
       </TitleString>
       <PriceString>
-        <span>₩{minPrice}</span>
-        <span>{maxPrice >= 500000 ? `₩${maxPrice}+` : `₩${maxPrice}`}</span>
+        <span>₩{filteredMinPrice}</span>
+        <span>
+          {filteredMaxPrice >= 500000
+            ? `₩${filteredMaxPrice}+`
+            : `₩${filteredMaxPrice}`}
+        </span>
       </PriceString>
       <WinePriceSlider
-        value={[minPrice, maxPrice]}
+        value={[filteredMinPrice, filteredMaxPrice]}
         onChange={changePriceHandler}
-        max={500000}
+        max={200000}
         min={0}
+        step={10}
         disableSwap
       />
     </React.Fragment>
@@ -33,10 +35,15 @@ const PriceSlider = () => {
 
 export default PriceSlider;
 
-const WinePriceSlider = styled(Slider)`
-  width: 97%;
-  color: ${({ theme }) => theme.colors.vintageRed};
-`;
+const WinePriceSlider = styled(Slider)(({ theme }) => ({
+  width: '97%',
+  color: theme.colors.vintageRed,
+
+  '& .MuiSlider-rail': {
+    opacity: 0.8,
+    backgroundColor: '#e3ddd8',
+  },
+}));
 
 const PriceString = styled.div`
   display: flex;
