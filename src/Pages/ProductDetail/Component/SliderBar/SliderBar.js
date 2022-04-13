@@ -2,18 +2,24 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Slider } from '@mui/material';
 
-const rate = 0.25;
-
-const rateToSliderNum = num => {
-  return [85 * num, 85 * num + 15];
-};
-const SliderBar = () => {
+const SliderBar = ({ product }) => {
+  const { bold, tannic, sweet, acidic } = product;
+  const tasteFeatures = [{ bold }, { tannic }, { sweet }, { acidic }];
+  const rateToSliderNum = num => {
+    return [85 * num, 85 * num + 15];
+  };
   return (
-    <SliderWrapper>
-      <span>Light받아올예정</span>
-      <FlavorSlider defaultValue={rateToSliderNum(rate)} />
-      <span>Bold받아올예정</span>
-    </SliderWrapper>
+    <>
+      {tasteFeatures.map((feature, index) => (
+        <SliderWrapper key={index}>
+          <h2>{Object.keys(feature)}less</h2>
+          <FlavorSlider
+            defaultValue={rateToSliderNum(Object.values(feature))}
+          />
+          <h2>{Object.keys(feature)}ful</h2>
+        </SliderWrapper>
+      ))}
+    </>
   );
 };
 
@@ -21,22 +27,23 @@ export default SliderBar;
 
 const SliderWrapper = styled.div`
   ${({ theme }) => theme.flexSet('row', '', 'center')}
-  margin :20px 0;
+  padding:1vw;
 
-  span {
+  h2 {
+    width: 7vw;
   }
 `;
+
 const FlavorSlider = styled(Slider)(({ theme }) => ({
   color: theme.colors.vintageRed,
-  margin: 20,
-  width: 450,
-  height: 5,
+  margin: '1vw',
+  width: '40vw',
+  height: '1vw',
   '& .MuiSlider-thumb': {
-    height: 0, //슬라이더 원형 홀더 사이즈 조정
+    height: 0,
     width: 0,
   },
   '& .MuiSlider-rail': {
-    opacity: 0.5,
     backgroundColor: '#e3ddd8',
   },
   pointerEvents: 'none',

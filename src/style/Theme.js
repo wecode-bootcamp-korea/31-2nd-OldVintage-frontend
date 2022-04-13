@@ -8,7 +8,7 @@ const colors = {
   vintageRed: '#ba1628',
   ratingRed: '#8c1a28',
   ratingOrange: '#f0a20a',
-  background: '#fafafa',
+  background: '#f6f3ef',
   white: '#FFFFFF',
   green: '#009688',
   grey: 'rgba(196,196,196,0.3)',
@@ -16,6 +16,8 @@ const colors = {
 };
 
 const fontSize = {
+  fontTitle: "'Alata', sans-serif;",
+  fontContent: "'Noto Sans KR', sans-serif;",
   large: '40px',
   medium: '20px',
   small: '8px',
