@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "Aglion",
+    "price": "63756.00",
+    "grape": "Malbec",
+    "bold": "0.51",
+    "tannic": "0.34",
+    "sweet": "0.28",
+    "acidic": "0.70",
+    "country": "France",
+    "winery": "Hereseibe",
+    "type": "Red",
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 595,
+      "rating_score": 2.74
+    }
+  },
+  {
+    "id": 2,
+    "name": "Doirpase",
+    "price": "38327.00",
+    "grape": "CabernetSauvignon",
+    "bold": "0.98",
+    "tannic": "0.10",
+    "sweet": "0.75",
+    "acidic": "0.15",
+    "country": "Chille",
+    "winery": "Kennolith",
+    "type": "Red",
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 607,
+      "rating_score": 2.83
+    }
+  },
+  {
+    "id": 3,
+    "name": "Lorenthe",
+    "price": "95236.00",
+    "grape": "Montepulciano",
+    "bold": "0.67",
+    "tannic": "0.38",
+    "sweet": "0.20",
+    "acidic": "0.08",
+    "country": "Spain",
+    "winery": "Meraufroid",
+    "type": "Red",
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 586,
+      "rating_score": 2.81
+    }
+  },
+  {
+    "id": 4,
+    "name": "Lorenthe",
+    "price": "95236.00",
+    "grape": "Montepulciano",
+    "bold": "0.67",
+    "tannic": "0.38",
+    "sweet": "0.20",
+    "acidic": "0.08",
+    "country": "Spain",
+    "winery": "Meraufroid",
+    "type": "Red",
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 586,
+      "rating_score": 2.81
+    }
+  }
+]
