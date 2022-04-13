@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "name": "Aglion",
+    "price": "63756.00",
+    "grape": "Malbec",
+    "bold": "0.51",
+    "tannic": "0.34",
+    "sweet": "0.28",
+    "acidic": "0.70",
+    "country": {
+      "id": 1,
+      "name": "France"
+    },
+    "winery": {
+      "id": 1,
+      "name": "Hereseibe"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 595,
+      "rating_score": 4.02
+    }
+  },
+  {
+    "id": 2,
+    "name": "Doirpase",
+    "price": "38327.00",
+    "grape": "CabernetSauvignon",
+    "bold": "0.98",
+    "tannic": "0.10",
+    "sweet": "0.75",
+    "acidic": "0.15",
+    "country": {
+      "id": 2,
+      "name": "Chille"
+    },
+    "winery": {
+      "id": 2,
+      "name": "Kennolith"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 607,
+      "rating_score": 4.0
+    }
+  },
+  {
+    "id": 3,
+    "name": "Lorenthe",
+    "price": "95236.00",
+    "grape": "Montepulciano",
+    "bold": "0.67",
+    "tannic": "0.38",
+    "sweet": "0.20",
+    "acidic": "0.08",
+    "country": {
+      "id": 3,
+      "name": "Spain"
+    },
+    "winery": {
+      "id": 3,
+      "name": "Meraufroid"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 586,
+      "rating_score": 3.98
+    }
+  },
+  {
+    "id": 4,
+    "name": "Rinias",
+    "price": "136458.00",
+    "grape": "Chardonnay",
+    "bold": "0.92",
+    "tannic": "0.82",
+    "sweet": "0.49",
+    "acidic": "0.66",
+    "country": {
+      "id": 1,
+      "name": "France"
+    },
+    "winery": {
+      "id": 4,
+      "name": "Oaytheldan"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 605,
+      "rating_score": 4.07
+    }
+  },
+  {
+    "id": 5,
+    "name": "Agmunrad",
+    "price": "20580.00",
+    "grape": "Malbec",
+    "bold": "0.33",
+    "tannic": "0.59",
+    "sweet": "0.75",
+    "acidic": "0.40",
+    "country": {
+      "id": 4,
+      "name": "Portugal"
+    },
+    "winery": {
+      "id": 5,
+      "name": "Pradwinus"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 594,
+      "rating_score": 4.02
+    }
+  },
+  {
+    "id": 6,
+    "name": "Eloths",
+    "price": "52024.00",
+    "grape": "CabernetSauvignon",
+    "bold": "0.39",
+    "tannic": "0.55",
+    "sweet": "0.25",
+    "acidic": "0.05",
+    "country": {
+      "id": 5,
+      "name": "Korea"
+    },
+    "winery": {
+      "id": 6,
+      "name": "Dongtan"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 605,
+      "rating_score": 4.0
+    }
+  },
+  {
+    "id": 7,
+    "name": "Lunguara",
+    "price": "89115.00",
+    "grape": "Montepulciano",
+    "bold": "0.64",
+    "tannic": "0.04",
+    "sweet": "0.88",
+    "acidic": "0.86",
+    "country": {
+      "id": 1,
+      "name": "France"
+    },
+    "winery": {
+      "id": 1,
+      "name": "Hereseibe"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 588,
+      "rating_score": 4.0
+    }
+  },
+  {
+    "id": 8,
+    "name": "Sippele",
+    "price": "143273.00",
+    "grape": "Chardonnay",
+    "bold": "0.32",
+    "tannic": "0.94",
+    "sweet": "0.86",
+    "acidic": "0.39",
+    "country": {
+      "id": 2,
+      "name": "Chille"
+    },
+    "winery": {
+      "id": 2,
+      "name": "Kennolith"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 592,
+      "rating_score": 3.99
+    }
+  },
+  {
+    "id": 9,
+    "name": "Areton",
+    "price": "106396.00",
+    "grape": "CabernetSauvignon",
+    "bold": "0.55",
+    "tannic": "0.83",
+    "sweet": "0.76",
+    "acidic": "0.26",
+    "country": {
+      "id": 3,
+      "name": "Spain"
+    },
+    "winery": {
+      "id": 3,
+      "name": "Meraufroid"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 590,
+      "rating_score": 4.05
+    }
+  },
+  {
+    "id": 10,
+    "name": "Endabad",
+    "price": "67740.00",
+    "grape": "Montepulciano",
+    "bold": "0.91",
+    "tannic": "0.68",
+    "sweet": "0.47",
+    "acidic": "0.92",
+    "country": {
+      "id": 1,
+      "name": "France"
+    },
+    "winery": {
+      "id": 4,
+      "name": "Oaytheldan"
+    },
+    "type": {
+      "id": 1,
+      "name": "Red"
+    },
+    "image_url": "https://i.ibb.co/YbHs9Gc/image.png",
+    "pairing": ["Pork", "Beef", "Lamb", "Mushroom"],
+    "review": {
+      "rating_count": 602,
+      "rating_score": 3.92
+    }
+  }
+]
