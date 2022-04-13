@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -7,6 +7,7 @@ import theme from '../../style/Theme';
 const ProductListCheckBox = ({
   filterData,
   title,
+  infoType,
   onSetWineTypeFilter,
   onSetWineryTypeFilter,
   onSetCountryTypeFilter,
@@ -15,23 +16,33 @@ const ProductListCheckBox = ({
 }) => {
   const [checkedInputs, setCheckedInputs] = useState([]);
 
-  const filterCondtion = {
-    wineSort: function () {
-      onSetWineTypeFilter(checkedInputs);
-    },
-    winery: function () {
-      onSetWineryTypeFilter(checkedInputs);
-    },
-    country: function () {
-      onSetCountryTypeFilter(checkedInputs);
-    },
-    grape: function () {
-      onSetGrapeTypeFilter(checkedInputs);
-    },
-    foodPairing: function () {
-      onSetFoodPairingTypeFilter(checkedInputs);
-    },
-  };
+  const filterCondtion = useMemo(() => {
+    const condtion = {
+      wineSort: function (input) {
+        onSetWineTypeFilter(input);
+      },
+      winery: function (input) {
+        onSetWineryTypeFilter(input);
+      },
+      country: function (input) {
+        onSetCountryTypeFilter(input);
+      },
+      grape: function (input) {
+        onSetGrapeTypeFilter(input);
+      },
+      foodPairing: function (input) {
+        onSetFoodPairingTypeFilter(input);
+      },
+    };
+
+    return condtion;
+  }, [
+    onSetWineTypeFilter,
+    onSetWineryTypeFilter,
+    onSetCountryTypeFilter,
+    onSetGrapeTypeFilter,
+    onSetFoodPairingTypeFilter,
+  ]);
 
   const changeHandler = event => {
     const { checked, value } = event.target;
@@ -44,9 +55,8 @@ const ProductListCheckBox = ({
   };
 
   useEffect(() => {
-    const nowFilterSort = filterData[0].infoType;
-    filterCondtion[nowFilterSort]();
-  }, [checkedInputs]);
+    filterCondtion[infoType](checkedInputs);
+  }, [checkedInputs, infoType, filterCondtion]);
 
   return (
     <React.Fragment>
