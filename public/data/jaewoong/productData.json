@@ -1,0 +1,22 @@
+{
+  "id": "1",
+  "product_name": "Aglion",
+  "price": 63756,
+  "grape": "Malbec",
+  "bold": 0.507380097,
+  "tannic": 0.338547599,
+  "sweet": 0.280067452,
+  "acidic": 0.70151629,
+  "country": "France",
+  "winery_name": "Hereseibe",
+  "type": "red",
+  "ratings": 4.3,
+  "pairings": ["Pork", "Beef", "Lamb", "Mushroom"],
+  "pairing_image": [
+    "https://i.ibb.co/HNt1LMX/image.png",
+    "https://i.ibb.co/k29FKNk/image.png",
+    "https://i.ibb.co/xqy2Wdf/image.png",
+    "https://i.ibb.co/6ybvhNG/image.png"
+  ],
+  "image": "https://i.ibb.co/YbHs9Gc/image.png"
+}
