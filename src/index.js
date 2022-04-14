@@ -5,6 +5,7 @@ import GlobalStyle from './style/GlobalStyle';
 import Theme from './style/Theme';
 import { ThemeProvider } from 'styled-components';
 import { StyledEngineProvider } from '@mui/styled-engine';
+import './../src/style/fonts/fonts.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
