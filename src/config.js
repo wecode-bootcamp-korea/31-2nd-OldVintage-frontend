@@ -5,6 +5,7 @@ export const API = {
   login: `${BASE_URL}/users/login`,
   KakaoLogin: `${BASE_URL}/users/kakao-auth`,
   productList: `${BASE_URL}/products`,
+  product: `${BASE_URL}/products/`,
   searchedList: `${BASE_URL}/products/search`,
 };
 

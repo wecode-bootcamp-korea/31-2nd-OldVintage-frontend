@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import SliderBar from './Component/SliderBar/SliderBar';
 import ProductDesc from './Component/ProductDesc/ProductDesc';
 import styled from 'styled-components';
+import Parings from './Parings/Parings';
+import API from '../../config';
 
 const ProductDetail = () => {
+  const params = useParams().id;
   const [product, setProduct] = useState({});
   const [winery, setWinery] = useState({});
 
   useEffect(() => {
-    fetch('http://10.58.6.19:8000/products/1')
+    fetch(API.product + params)
       .then(response => response.json())
       .then(data => {
         setProduct(data.product_detail.product);
@@ -41,6 +45,9 @@ const ProductDetail = () => {
           </TasteSummary>
         </FlexRow>
       </TasteWrapper>
+      {product.pairings && (
+        <Parings image={product.image} pairings={product.pairings} />
+      )}
     </div>
   );
 };
