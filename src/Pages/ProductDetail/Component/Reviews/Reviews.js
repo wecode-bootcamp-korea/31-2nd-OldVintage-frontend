@@ -14,11 +14,11 @@ const Reviews = ({ rating, ratingCounts, scores, params }) => {
     content: '',
     images: [],
   });
-
-  const [reviewQuery, setReviewQuery] = useState('?offset=0&limit=10');
+  const [myReviewImages, setMyReviewImages] = useState([]);
+  const [reviewQuery, setReviewQuery] = useState('/reviews?offset=0&limit=10');
 
   const loadReviews = () => {
-    fetch(API.reviews + params + reviewQuery)
+    fetch(API.product + params + reviewQuery)
       .then(response => response.json())
       .then(data => {
         setReviews(data.result.review);
@@ -28,23 +28,27 @@ const Reviews = ({ rating, ratingCounts, scores, params }) => {
   const updateReview = e => {
     setMyReview(() => ({ ...myReview, [e.target.className]: e.target.value }));
   };
-
+  const updateReviewImages = e => {
+    setMyReviewImages(e.target.files);
+  };
   const uploadReview = e => {
     e.preventDefault();
     const formdata = new FormData();
 
-    formdata.append(
-      'user',
-      'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.hc30U7BHMoFXG2VbBlvLMvwy-Bok_CQScr44KWCVEj8'
-    );
-    formdata.append('images', myReview.image);
+    for (let i of myReviewImages) {
+      formdata.append('images', i);
+    }
+
     formdata.append('product_id', params);
     formdata.append('rating', myReview['MuiRating-visuallyHidden']);
     formdata.append('content', myReview.content);
 
     fetch(API.reviews, {
       method: 'POST',
-
+      headers: {
+        Authorization:
+          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.hc30U7BHMoFXG2VbBlvLMvwy-Bok_CQScr44KWCVEj8',
+      },
       body: formdata,
     })
       .then(response => {
@@ -67,7 +71,11 @@ const Reviews = ({ rating, ratingCounts, scores, params }) => {
     <ReviewSection>
       <WriteReviewWrapper>
         <h1>Community review</h1>
-        <WriteReview updateReview={updateReview} uploadReview={uploadReview} />
+        <WriteReview
+          updateReview={updateReview}
+          updateReviewImages={updateReviewImages}
+          uploadReview={uploadReview}
+        />
       </WriteReviewWrapper>
       <FlexRow>
         <ReviewsWrapper>

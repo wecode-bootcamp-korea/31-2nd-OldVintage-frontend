@@ -2,7 +2,7 @@ import React from 'react';
 import { Rating } from '@mui/material';
 import styled from 'styled-components';
 
-const WriteReview = ({ updateReview, uploadReview }) => {
+const WriteReview = ({ updateReview, uploadReview, updateReviewImages }) => {
   return (
     <Wrapper>
       <Blank>
@@ -12,7 +12,7 @@ const WriteReview = ({ updateReview, uploadReview }) => {
           className="images"
           type="file"
           accept="img/*"
-          onChange={updateReview}
+          onChange={updateReviewImages}
           multiple
         />
       </Blank>

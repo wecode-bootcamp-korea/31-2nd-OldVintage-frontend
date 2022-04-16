@@ -5,6 +5,7 @@ import ProductDesc from './Component/ProductDesc/ProductDesc';
 import Reviews from './Component/Reviews/Reviews';
 import styled from 'styled-components';
 import Parings from './Parings/Parings';
+import WineryInfo from './Component/WineryInfo/WineryInfo';
 import API from '../../config';
 
 const ProductDetail = () => {
@@ -48,6 +49,7 @@ const ProductDetail = () => {
       {product.pairings && (
         <Parings image={product.image} pairings={product.pairings} />
       )}
+      {winery && <WineryInfo winery={winery} />}
       {product.scores && (
         <Reviews
           rating={product.rating}
