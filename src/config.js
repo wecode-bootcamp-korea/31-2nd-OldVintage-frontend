@@ -7,6 +7,7 @@ export const API = {
   productList: `${BASE_URL}/products`,
   product: `${BASE_URL}/products/`,
   searchedList: `${BASE_URL}/products/search`,
+  reviews: `${BASE_URL}/reviews`,
 };
 
 export default API;
