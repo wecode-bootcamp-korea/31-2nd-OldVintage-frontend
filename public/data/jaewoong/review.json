@@ -1,1 +1,98 @@
-[{}]
+{
+  "result": {
+    "review": [
+      {
+        "id": 29551,
+        "user": "user3",
+        "product_id": 1,
+        "rating": 5,
+        "content": "\ud55c\uae002",
+        "created_at": "2022-04-18",
+        "image_url": [
+          "https://oldvintage-test001.s3.ap-northeast-2.amazonaws.com/static/review/9478454b-193a-4c4d-b6e2-df73a18b8439_.jpg"
+        ]
+      },
+      {
+        "id": 595,
+        "user": "user595",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Etiam euismod quam id ante varius fermentum.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 594,
+        "user": "user594",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Proin ultricies magna a ante mollis venenatis.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 593,
+        "user": "user593",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Etiam at erat in ante mattis pellentesque.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 592,
+        "user": "user592",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Vivamus gravida diam eget vulputate convallis.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 591,
+        "user": "user591",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Praesent ut metus et orci ultrices bibendum nec vel nunc.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 590,
+        "user": "user590",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Donec feugiat enim eu mi accumsan mattis.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 589,
+        "user": "user589",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Donec laoreet neque a congue faucibus.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 588,
+        "user": "user588",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Donec eleifend nibh ut varius consectetur.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      },
+      {
+        "id": 587,
+        "user": "user587",
+        "product_id": 1,
+        "rating": 5,
+        "content": "Ut volutpat libero nec enim consectetur, ac pretium massa accumsan.",
+        "created_at": "2022-04-17",
+        "image_url": []
+      }
+    ]
+  }
+}

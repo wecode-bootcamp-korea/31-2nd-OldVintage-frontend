@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import SliderBar from './Component/SliderBar/SliderBar';
 import ProductDesc from './Component/ProductDesc/ProductDesc';
+import Reviews from './Component/Reviews/Reviews';
 import styled from 'styled-components';
 import Parings from './Parings/Parings';
 import API from '../../config';
@@ -10,7 +11,6 @@ const ProductDetail = () => {
   const params = useParams().id;
   const [product, setProduct] = useState({});
   const [winery, setWinery] = useState({});
-
   useEffect(() => {
     fetch(API.product + params)
       .then(response => response.json())
@@ -18,7 +18,7 @@ const ProductDetail = () => {
         setProduct(data.product_detail.product);
         setWinery(data.product_detail.winery);
       });
-  }, []);
+  }, [params]);
 
   return (
     <div>
@@ -47,6 +47,14 @@ const ProductDetail = () => {
       </TasteWrapper>
       {product.pairings && (
         <Parings image={product.image} pairings={product.pairings} />
+      )}
+      {product.scores && (
+        <Reviews
+          rating={product.rating}
+          ratingCounts={product.rating_count}
+          scores={product.scores}
+          params={params}
+        />
       )}
     </div>
   );
