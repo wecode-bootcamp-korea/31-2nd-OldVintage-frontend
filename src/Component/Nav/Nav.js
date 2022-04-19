@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Search from './Search';
 import Divider from '@mui/material/Divider';
 import ShippingMenu from './ShippingMenu';
 import LanguageMenu from './LanguageMenu';
