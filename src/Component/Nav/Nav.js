@@ -11,9 +11,13 @@ import ParingsMenu from './ParingsMenu';
 import GrapesMenu from './GrapesMenu';
 import RegionsMenu from './RegionsMenu';
 import NavSearchBar from '../../Pages/NavSearchBar/NavSearchBar';
+import LoginModal from '../../Pages/Login/LoginModal';
 
 const Nav = () => {
-  // TODO : Nav Login Merge시 state 추가하기
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <NavigationContainer>
       <NavigationWrapper>
@@ -30,8 +34,11 @@ const Nav = () => {
             </IconContainer>
             <StyledDivider orientation="vertical" variant="middle" flexItem />
             <IconContainer>
-              <IoPersonOutline style={{ cursor: 'pointer' }} />
-              {/* TODO: Nav Login Metge시 IoPersonOutline onClick 시 로그인 모달 열리도록 기능 추가 */}
+              <IoPersonOutline
+                style={{ cursor: 'pointer' }}
+                onClick={handleOpen}
+              />
+              <LoginModal handleClose={handleClose} open={open} />
             </IconContainer>
           </NavRight>
         </UpperNavigation>

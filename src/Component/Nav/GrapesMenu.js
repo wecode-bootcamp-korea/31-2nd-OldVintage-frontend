@@ -77,6 +77,7 @@ const PopDownMenu = styled.div`
   box-shadow: 2px 2px 7px 7px rgba(0, 0, 0, 0.3);
   top: 25px;
   padding: 40px;
+  z-index: 999;
 `;
 
 const PopupSort = styled.div`
