@@ -14,7 +14,10 @@ const NavSearchBar = () => {
     <NavSearchBarArea>
       <NavSearchInsertModal onSetFilteredInput={filteredInputHandler} />
       {filteredInput.length > 0 ? (
-        <NavSearchListModal filteredInput={filteredInput} />
+        <NavSearchListModal
+          filteredInput={filteredInput}
+          onSetFilteredInput={filteredInputHandler}
+        />
       ) : (
         ''
       )}
@@ -25,7 +28,10 @@ const NavSearchBar = () => {
 export default NavSearchBar;
 
 const NavSearchBarArea = styled.div`
+  position: absolute;
+  top: 1.5vh;
+  left: 18vw;
   padding: 5vh 0 0 0;
   width: 20vw;
-  background-color: inherit;
+  background-color: transparent;
 `;
