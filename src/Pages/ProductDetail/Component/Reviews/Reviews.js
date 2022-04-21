@@ -46,14 +46,14 @@ const Reviews = ({ rating, ratingCounts, scores, params }) => {
     fetch(API.reviews, {
       method: 'POST',
       headers: {
-        Authorization:
-          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.hc30U7BHMoFXG2VbBlvLMvwy-Bok_CQScr44KWCVEj8',
+        Authorization: localStorage.getItem('kakao_token'),
       },
       body: formdata,
     })
       .then(response => {
         if (response.ok) {
           alert('리뷰 작성이 완료되었습니다.');
+          window.location.reload();
         } else {
           throw new Error('Unexpected Error');
         }

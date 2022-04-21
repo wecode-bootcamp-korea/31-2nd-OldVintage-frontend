@@ -41,11 +41,13 @@ const WineryInfo = ({ winery }) => {
 };
 export default WineryInfo;
 
-const WineryWrapper = styled.section``;
+const WineryWrapper = styled.section`
+  padding: 10px;
+`;
 const Wrapper = styled.div`
   ${({ theme }) => theme.flexSet('row', '', '')}
 
-  @media(min-width:1680px) {
+  @media(min-width:2000px) {
     ${({ theme }) => theme.flexSet('column', '', '')}
   }
 `;
