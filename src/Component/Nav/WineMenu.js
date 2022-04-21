@@ -1,8 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 import { GiWineGlass } from 'react-icons/gi';
+import { useNavigate } from 'react-router-dom';
+
+const MENU_LIST = [
+  [
+    'South Italy Red',
+    'Tuscan Red',
+    'Spanish Rioja',
+    'South African Pinotage',
+    'Italian Amarone',
+  ],
+  [
+    'German Riesling',
+    'Northern Italy White',
+    'German Sauvignon Blanc',
+    'German Grauburgunder',
+    'Korea Sunchang Gochujang',
+  ],
+];
+
+const [FIRST_MENU, SECOND_MENU] = MENU_LIST;
 
 const WineMenu = () => {
+  const navigate = useNavigate();
+
+  const goToProducts = () => {
+    navigate('./products');
+  };
+
   return (
     <MenuContainer>
       <IconContainer>
@@ -14,21 +40,21 @@ const WineMenu = () => {
           <Sort>
             <h1>Red</h1>
             <ul>
-              <li>South Italy Red</li>
-              <li>Tuscan Red</li>
-              <li>Spanish Rioja Red</li>
-              <li>South African Pinotage</li>
-              <li>Italian Amarone</li>
+              {FIRST_MENU.map((item, i) => (
+                <MenuString onClick={goToProducts} key={i}>
+                  {item}
+                </MenuString>
+              ))}
             </ul>
           </Sort>
           <Sort>
             <h1>White</h1>
             <ul>
-              <li>German Riesling</li>
-              <li>Northern Italy White</li>
-              <li>German Sauvignon Blanc</li>
-              <li>German Grauburgunder</li>
-              <li>Korea Sunchang Gochujang</li>
+              {SECOND_MENU.map((item, i) => (
+                <MenuString onClick={goToProducts} key={i}>
+                  {item}
+                </MenuString>
+              ))}
             </ul>
           </Sort>
           <Sort>
@@ -88,6 +114,12 @@ const PopDownMenu = styled.div`
 
 const PopupSort = styled.div`
   display: flex;
+`;
+
+const MenuString = styled.li`
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const Sort = styled.div`
