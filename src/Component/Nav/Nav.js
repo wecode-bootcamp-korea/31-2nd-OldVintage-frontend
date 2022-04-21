@@ -12,20 +12,27 @@ import GrapesMenu from './GrapesMenu';
 import RegionsMenu from './RegionsMenu';
 import NavSearchBar from '../../Pages/NavSearchBar/NavSearchBar';
 import LoginModal from '../../Pages/Login/LoginModal';
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const navigate = useNavigate();
+
+  const goToMain = () => {
+    navigate('/');
+  };
+
   return (
     <NavigationContainer>
       <NavigationWrapper>
         <UpperNavigation>
           <NavLeft>
-            <WevinoLogo>Wevino</WevinoLogo>
-            <NavSearchBar />
+            <WevinoLogo onClick={goToMain}>Wevino</WevinoLogo>
           </NavLeft>
+          <NavSearchBar />
           <NavRight>
             <ShippingMenu />
             <LanguageMenu />
@@ -93,11 +100,15 @@ const WevinoLogo = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.large};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   color: ${({ theme }) => theme.colors.vintageRed};
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const NavLeft = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: flex-end; */
 `;
 
 const NavRight = styled.div`

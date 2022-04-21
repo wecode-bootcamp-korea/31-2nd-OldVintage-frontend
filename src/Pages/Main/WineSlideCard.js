@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -9,6 +10,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Rating from '@mui/material/Rating';
 
 const WineSlideCard = ({
+  id,
   image,
   name,
   value,
@@ -17,12 +19,23 @@ const WineSlideCard = ({
   winery,
   description,
 }) => {
+  const navigate = useNavigate();
+
+  const goToDetailPage = () => {
+    navigate(`/products/${id}`);
+  };
+
+  const goItemDetailPage = () => {
+    goToDetailPage();
+    window.location.reload();
+  };
+
   return (
-    <StyledCard sx={{ maxWidth: 345 }}>
+    <StyledCard sx={{ maxWidth: 345 }} onClick={goItemDetailPage}>
       <CardActionArea>
         <CardUpperInfo>
           <ImageContainer>
-            <img alt="wine bottle" src={image} />
+            <ImageContainerImage alt="wine bottle" src={image} />
           </ImageContainer>
           <StyledCardContent>
             <h1>{name}</h1>
@@ -60,6 +73,11 @@ const ImageContainer = styled.div`
   &:hover img {
     transform: scale(1.1);
   }
+`;
+
+const ImageContainerImage = styled.img`
+  width: 8vw;
+  height: 40vh;
 `;
 
 const StyledCardContent = styled(CardContent)`
