@@ -1,54 +1,46 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { KAKAO_AUTH_URL } from './OAuth';
 
-const LoginModal = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+const LoginModal = ({ open, handleClose }) => {
   return (
-    <>
-      <Button onClick={handleOpen} />
-      <Modal open={open} onClose={handleClose}>
-        <ModalBox>
-          <LoginContainer>
-            <LoginImage>
-              <img alt="login" src="/images/login/login-pic-grape.jpg" />
-            </LoginImage>
-            <LoginBox>
-              <Login>
-                <h1>Join Old Vintage</h1>
-                <div />
-                <h1> Log In </h1>
-              </Login>
-              <SocialLogin>
-                <SocialImg>
-                  <a href={KAKAO_AUTH_URL}>
-                    <img
-                      src="/images/login/kakao_login_large_narrow.jpg"
-                      alt="kakaologin"
-                    />
-                  </a>
-                </SocialImg>
-                <SocialImg>
-                  <img src="/images/login/apple-login.png" alt="applelogin" />
-                </SocialImg>
-              </SocialLogin>
-              <Join>
-                <div>
-                  <span>Don't have a profile?</span>
-                  <span>Join Old Vintage</span>
-                </div>
-              </Join>
-            </LoginBox>
-          </LoginContainer>
-        </ModalBox>
-      </Modal>
-    </>
+    <Modal open={open} onClose={handleClose}>
+      <ModalBox>
+        <LoginContainer>
+          <LoginImage>
+            <img alt="login" src="/images/login/login-pic-grape.jpg" />
+          </LoginImage>
+          <LoginBox>
+            <Login>
+              <h1>Join Old Vintage</h1>
+              <div />
+              <h1> Log In </h1>
+            </Login>
+            <SocialLogin>
+              <SocialImg>
+                <a href={KAKAO_AUTH_URL}>
+                  <img
+                    src="/images/login/kakao_login_large_narrow.jpg"
+                    alt="kakaologin"
+                  />
+                </a>
+              </SocialImg>
+              <SocialImg>
+                <img src="/images/login/apple-login.png" alt="applelogin" />
+              </SocialImg>
+            </SocialLogin>
+            <Join>
+              <div>
+                <span>Don't have a profile?</span>
+                <span>Join Old Vintage</span>
+              </div>
+            </Join>
+          </LoginBox>
+        </LoginContainer>
+      </ModalBox>
+    </Modal>
   );
 };
 const ModalBox = styled(Box)`
