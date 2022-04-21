@@ -7,7 +7,7 @@ import { Input } from '@mui/material';
 
 const NavSearchInsertModal = ({ onSetFilteredInput }) => {
   const [searchedInput, setSearchedInput] = useState('');
-  const searchbarInput = useDebounce(searchedInput, 1000);
+  const searchbarInput = useDebounce(searchedInput, 500);
 
   const searchInputHandler = event => {
     setSearchedInput(event.target.value);

@@ -2,7 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
-const NavSearchListItem = ({ wineId, wineName, winePrice }) => {
+const NavSearchListItem = ({
+  wineId,
+  wineName,
+  winePrice,
+  onSetFilteredInput,
+}) => {
   const navigate = useNavigate();
 
   const goToDetailPage = () => {
@@ -14,8 +19,14 @@ const NavSearchListItem = ({ wineId, wineName, winePrice }) => {
     .toString()
     .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
+  const goItemDetailPage = () => {
+    goToDetailPage();
+    onSetFilteredInput('');
+    window.location.reload();
+  };
+
   return (
-    <NavSearchListItemArea onClick={goToDetailPage}>
+    <NavSearchListItemArea onClick={goItemDetailPage}>
       <WineNameString>{wineName}</WineNameString>
       <WinePriceString>₩{winePriceString}</WinePriceString>
     </NavSearchListItemArea>
@@ -28,8 +39,12 @@ const NavSearchListItemArea = styled.div`
   display: flex;
   align-items: center;
   margin: 3vh 0 0 0;
+  padding: 0 0.5vw 2vh 0.5vw;
   border-bottom: 1px solid rgb(210, 210, 210);
   background-color: white;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const WineNameString = styled.span`
