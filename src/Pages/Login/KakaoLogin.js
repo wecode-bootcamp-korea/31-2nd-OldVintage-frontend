@@ -40,7 +40,7 @@ const KakaoLogin = () => {
     })
       .then(res => res.json())
       .then(res => {
-        localStorage.setItem('kakao_token', res.access_token);
+        localStorage.setItem('kakao_token', res.token);
         alert('로그인에 성공하였습니다');
         goToMainPage();
       });
