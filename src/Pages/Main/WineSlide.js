@@ -25,6 +25,7 @@ const WineSlide = () => {
         {BEST_WINE_DATA.map(list => (
           <WineSlideCard
             key={list.key}
+            id={list.id}
             image={list.image}
             name={list.name}
             value={list.value}
@@ -44,6 +45,7 @@ export default WineSlide;
 const BEST_WINE_DATA = [
   {
     key: 1,
+    id: 1,
     image: 'https://i.ibb.co/pr3CGw4/1-Aglion.png',
     name: 'Aglion',
     value: 4,
@@ -55,6 +57,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 2,
+    id: 2,
     image: 'https://i.ibb.co/yyLJPZs/2-Doirpase.png',
     name: 'Doirpase',
     value: 5,
@@ -66,6 +69,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 3,
+    id: 3,
     image: 'https://i.ibb.co/nnH8MBQ/3-Lorenthe.png',
     name: 'Lorenthe',
     value: 5,
@@ -77,6 +81,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 4,
+    id: 4,
     image: 'https://i.ibb.co/3s1yF7G/4-Rinias.png',
     name: 'Rinias',
     value: 3,
@@ -88,6 +93,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 5,
+    id: 5,
     image: 'https://i.ibb.co/sJ2qp54/5-Agmunrad.png',
     name: 'Agmunrad',
     value: 4,
@@ -99,6 +105,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 6,
+    id: 6,
     image: 'https://i.ibb.co/d2YcgGh/6-Eloths.png',
     name: 'Eloths',
     value: 5,
@@ -110,6 +117,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 7,
+    id: 7,
     image: 'https://i.ibb.co/NT7LDNT/7-Lunguara.png',
     name: 'Lunguara',
     value: 2,
@@ -121,6 +129,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 8,
+    id: 8,
     image: 'https://i.ibb.co/YLRMm2x/8-Sippele.png',
     name: 'Sippele',
     value: 3,
@@ -132,6 +141,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 9,
+    id: 9,
     image: 'https://i.ibb.co/YZhPmSW/9-Areton.png',
     name: 'Areton',
     value: 4,
@@ -143,6 +153,7 @@ const BEST_WINE_DATA = [
   },
   {
     key: 10,
+    id: 10,
     image: 'https://i.ibb.co/rFx68S1/10-Endabad.png',
     name: 'Endabad',
     value: 4,

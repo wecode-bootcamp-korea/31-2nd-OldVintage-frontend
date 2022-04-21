@@ -29,7 +29,7 @@ export default NavSearchBar;
 
 const NavSearchBarArea = styled.div`
   position: absolute;
-  top: 1.5vh;
+  top: -2.5vh;
   left: 18vw;
   padding: 5vh 0 0 0;
   width: 20vw;
