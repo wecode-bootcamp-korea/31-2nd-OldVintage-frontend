@@ -24,19 +24,17 @@
 - 내용을(백엔드)
 - 채워주세요(백엔드)
 
-<br/>
 👇 메인페이지
 <img src="https://user-images.githubusercontent.com/80399821/164908962-1d913969-9789-4b60-a9d0-605d045a6c7e.gif" width="480" height="270" />
 <br/>
-👇 로그인, 회원가입
-<img src="" width="400" height="300" />
+👇 카카오 로그인
+<img src="https://user-images.githubusercontent.com/80399821/164908998-edccf3c2-2fe9-434e-b0bf-4161a52cb31e.gif" width="480" height="270" />
 <br/>
-👇 전체 상품 리스트, 카테고리별 리스트
-<img src="" width="400" height="300" />
+👇 상품 리스트, 다중 필터
+<img src="https://user-images.githubusercontent.com/80399821/164908995-8463124b-09cb-4c53-b24f-26a106bf8936.gif" width="480" height="270" />
 <br/>
 👇 제품 상세 페이지
-<img src="" width="400" height="300" />
+<img src="https://user-images.githubusercontent.com/80399821/164909002-441a6ff8-1b27-48f8-b596-ca59537b23c0.gif)" width="480" height="270" />
 <br/>
-👇 장바구니, 검색기능
-<img src="" width="400" height="300" />
+
 
