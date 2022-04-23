@@ -1,4 +1,4 @@
-# Wesop 프로젝트
+# Wevino 프로젝트
 - 시연영상 : https://www.youtube.com/watch?v=ZKLUUm3uvxg
 - 와인 판매 사이트 <a href="https://www.vivino.com/">비비노</a>의 홈페이지 클론코딩
 - 백엔드 깃헙 주소 : https://github.com/wecode-bootcamp-korea/31-2nd-OldVintage-backend
