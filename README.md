@@ -38,7 +38,7 @@
 <br/>
 <br/>
 👇 제품 상세 페이지
-<img src="https://user-images.githubusercontent.com/80399821/164909002-441a6ff8-1b27-48f8-b596-ca59537b23c0.gif)" width="480" height="270" />
+<img src="https://user-images.githubusercontent.com/80399821/164909066-7c36d1a3-0f3f-4224-9e13-2b46a629af1e.gif" width="480" height="270" />
 <br/>
 
 
