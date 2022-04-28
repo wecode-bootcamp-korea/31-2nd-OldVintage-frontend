@@ -1,16 +1,16 @@
 # Wevino 프로젝트
 - 시연영상 : https://www.youtube.com/watch?v=ZKLUUm3uvxg
-- 와인 판매 사이트 <a href="https://www.vivino.com/">비비노</a>의 홈페이지 클론코딩
-- 백엔드 깃헙 주소 : https://github.com/wecode-bootcamp-korea/31-2nd-OldVintage-backend
+- 와인 판매 및 추천 사이트 <a href="https://www.vivino.com/">비비노</a> 홈페이지의 컨셉과 비슷하게 아예 처음부터 구축해본 사이트
 - 프론트엔드 깃헙 주소 : https://github.com/wecode-bootcamp-korea/31-1st-Wesop-frontend
+- 백엔드 깃헙 주소 : https://github.com/wecode-bootcamp-korea/31-2nd-OldVintage-backend
 
 ## 개발 기간 및 인원
 - 개발 기간 : 2022년 4월 11일 ~ 2022년 4월 21일 (11일)
-- 개발 인원 : 프론트엔드 3명 (윤재웅, 전지현, 김민수)
-            백엔드 2명 (박광수(PM), 박지훈)
+- 개발 인원 : 프론트엔드 3명 - 윤재웅, 전지현, 김민수 /
+            백엔드 2명 - 박광수(PM), 박지훈
 
 ## 사용기술
-- Front-End : React.js, Material UI, Styled-Components ,react-infinite-scroll-component ,React Router
+- Front-End : React.js, React Library Material UI, React Slick, Styled-Components ,react-infinite-scroll-component ,React Router
 - Back-End : Python, Django, Mysql, AWS(EC2, RDS, S3), boto3
 - 협업 툴 : Git, Trello, Slack, Google Spreadsheet
 
